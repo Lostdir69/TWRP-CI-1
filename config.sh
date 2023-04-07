@@ -4,14 +4,14 @@
 export TWRP_MANIFEST="https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp"
 export TWRP_BRANCH="twrp-12.1"
 #export TWRP_BRANCH="twrp-test"
-export DT_LINK="https://github.com/faoliveira78/android_device_oneplus_cheeseburger.git -b android-13"
+export DT_LINK=" https://github.com/motorola-MT6765-devs/twrp_motorola_hawaiipl -b twrp-12"
 
-export DEVICE="cheeseburger"
-export OEM="oneplus"
-#export PLATFORM="msm8998"
-export TARGET="recoveryimage"
+export DEVICE="hawaiipl"
+export OEM="motorola"
+#export PLATFORM="mt6765"
+export TARGET="boot.img"
 export TW_DEVICE_VERSION="2"
-export OUTPUT="recovery.img"
+export OUTPUT="boot.img.img"
 export FILENAME="twrp*.img"
 
 # Kernel Source
