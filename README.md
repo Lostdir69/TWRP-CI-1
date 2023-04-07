@@ -1,4 +1,4 @@
-# 🛠️ TWRP Recovery CI
+#. 🛠️ TWRP Recovery CI
 A Free CI to Build TWRP Recovery
 
 ### It's an edited version of Sushrut1101's OrangeFox CI repo. Used for building twrp.
