@@ -13,7 +13,7 @@ task:
   name: "TWRP CI"
   timeout_in: 120m
   container:
-      image: ghcr.io/faoliveira78/docker:latest
+      image: ghcr.io/sushrut1101/docker:latest
       cpu: 8
       memory: 32G
 
