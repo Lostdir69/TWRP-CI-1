@@ -9,9 +9,9 @@ export DT_LINK=" https://github.com/motorola-MT6765-devs/twrp_motorola_hawaiipl 
 export DEVICE="hawaiipl"
 export OEM="motorola"
 #export PLATFORM="mt6765"
-export TARGET="boot.img"
+export TARGET="bootimage"
 export TW_DEVICE_VERSION="2"
-export OUTPUT="boot.img.img"
+export OUTPUT="boot.img"
 export FILENAME="twrp*.img"
 
 # Kernel Source
