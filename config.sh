@@ -4,7 +4,7 @@
 export TWRP_MANIFEST="https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp"
 export TWRP_BRANCH="twrp-12.1"
 #export TWRP_BRANCH="twrp-test"
-export DT_LINK=" https://github.com/motorola-MT6765-devs/twrp_motorola_hawaiipl -b twrp-12"
+export DT_LINK=" https://github.com/LMAO-armv8/twrp_motorola_hawaiipl -b twrp-12"
 
 export DEVICE="hawaiipl"
 export OEM="motorola"
