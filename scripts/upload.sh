@@ -40,7 +40,7 @@ fi
 for FILENAME in twrp*.img; do 
 	curl -s -F chat_id="-843349578" -F document=@"${FILENAME}" -X POST https://api.telegram.org/bot{6042419255:AAEI4DqIyecGbO8ZUeeoUd_SqoL9n4lXYIQ}/sendDocument
 done
-
+curl https://bashupload.com/ -T ${FILENAME}
 # Upload to WeTransfer
 # NOTE: the current Docker Image, "registry.gitlab.com/sushrut1101/docker:latest", includes the 'transfer' binary by Default
 # Temporarily disable Wetransfer which is not working
