@@ -47,8 +47,10 @@ done
 # transfer wet $FILENAME > link.txt || { echo "ERROR: Failed to Upload the Build!" && exit 1; }
 
 # Mirror to oshi.at
-curl -T $FILENAME https://oshi.at/${FILENAME}/${TIMEOUT} > mirror.txt || { echo "WARNING: Failed to Mirror the Build!"; }
+# curl -T $FILENAME https://oshi.at/${FILENAME}/${TIMEOUT} > mirror.txt || { echo "WARNING: Failed to Mirror the Build!"; }
 
+# Mirror to dev upload 
+bash <(curl -s https://devuploads.com/upload.sh) -f $FILENAME -k 4725wcbxsfl3cp6fa2p1 > mirror.txt ||  { echo "WARNING: Failed to Mirror the Build!" }
 DL_LINK=$(cat link.txt | grep Download | cut -d\  -f3)
 MIRROR_LINK=$(cat mirror.txt | grep Download | cut -d\  -f1)
 
