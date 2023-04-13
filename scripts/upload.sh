@@ -5,8 +5,8 @@ source $CONFIG
 
 # A Function to Send Posts to Telegram
 telegram_message() {
-	curl -s -X POST "https://api.telegram.org/bot${TG_TOKEN}/sendMessage" \
-	-d chat_id="${TG_CHAT_ID}" \
+	curl -s -X POST "https://api.telegram.org/bot${6042419255:AAEI4DqIyecGbO8ZUeeoUd_SqoL9n4lXYIQ}/sendMessage" \
+	-d chat_id="-843349578" \
 	-d parse_mode="HTML" \
 	-d text="$1"
 }
@@ -38,7 +38,7 @@ fi
 
 # Send file to Telegram
 for FILENAME in twrp*.img; do 
-	curl -s -F chat_id="${TG_CHAT_ID}" -F document=@"${FILENAME}" -X POST https://api.telegram.org/bot${TG_TOKEN}/sendDocument
+	curl -s -F chat_id="-843349578" -F document=@"${FILENAME}" -X POST https://api.telegram.org/bot{6042419255:AAEI4DqIyecGbO8ZUeeoUd_SqoL9n4lXYIQ}/sendDocument
 done
 
 # Upload to WeTransfer
